@@ -1,0 +1,210 @@
+@media(min-width:1081px) {
+
+    body{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: 'GeometricaLight', sans-serif;
+    }
+
+    .header__content{
+        margin-top: 20px;
+    }
+    .header__logo{
+        width: 150px;
+    }
+    .header__logo img{
+        width: 100%;
+    }
+    .cart{
+        display: flex;
+        align-items: center;
+    }
+    .cart img{
+        width: 40px;
+        overflow: hidden;
+        transform: translate(0, -5px);
+    }
+    .content__main{
+        display: grid;
+        grid-template-columns: 5fr 1fr 5fr;
+        justify-content: space-between;
+    }
+    .heager__links{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .link{
+        cursor: pointer;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .link__body{
+    }
+    .link-activated{
+        color: white;
+        background-color: orangered;
+    }
+    .header__categories{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid lightgray;
+        font-weight: bold;
+        font-size: 14px;
+        color: #1b1b1b;
+    }
+    .header__category{
+        color: #1b1b1b;
+
+    }
+    .header__blocks{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header__blocks-body{
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+    }
+    .header__buttons{
+    }
+    .header__buttons-content{
+        justify-content: space-between;
+        display: flex;
+        font-size: 13px;
+    }
+    .country{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .country img{
+        margin-left: 4px;
+        width: 20px;
+    }
+    .account{
+        display: flex;
+        align-items: center;
+    }
+    .star{
+        display: flex;
+        align-items: center;
+    }
+    .search{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+    }
+    .search input{
+        padding: 0;
+        width: 90%;
+        height: 35px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-left: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    textarea:focus, input:focus{
+        outline: none;
+
+    }
+    .search__icone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 10%;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        border-right: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+
+@media(max-width:1080px) {
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .burger-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 20px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10;
+  }
+  
+  .burger-button:focus {
+    outline: none;
+  }
+  
+  .burger-button div {
+    width: 20px;
+    height: 1.5px;
+    background: #333;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: -0.5px;
+  }
+  
+  .burger-button.open div:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  .burger-button.open div:nth-child(2) {
+    opacity: 0;
+    /* transform: translateX(20px); */
+  }
+  
+  .burger-button.open div:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .header__logo img{
+    width: 80px;
+  }
+
+  .cart{
+    margin-left: 10px;
+  }
+
+  .cart img{
+    width: 30px;
+    transform: translate(0px, -3px)
+  }
+
+  .left-block{
+    display: flex;
+    align-items: center;
+  }
+
+  .buttons{
+    display: flex;
+    align-items:center;
+  }
+  .search{
+    margin-left: 10px;
+  }
+}

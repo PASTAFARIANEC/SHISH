@@ -1,0 +1,55 @@
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: orangered;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+
+@font-face {
+    font-family: 'GeometricaLight';
+    src: url('../fonts/geometria_light.otf') format('opentype'); /* для старых браузеров */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media(min-width:1081px) {
+
+    body{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: 'GeometricaLight', sans-serif;
+    }
+
+}
+.wrapper {
+    margin-top: 40px;
+}
+
+.info{
+    margin-top: 40px;
+    padding: 40px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+.info__title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.info__text{
+    font-size: 13px;
+}
+
+
+@media(max-width:1080px) {
+    .wrapper {
+        margin-top: 0;
+    }
+    .title {
+        margin-top: 20px;
+    }
+}
